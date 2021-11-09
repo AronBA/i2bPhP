@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +7,12 @@
 <body>
 <?php
 $n = 1;
-while(true){
+do{
     echo "<br>" .$n ."</br>";
-    $n ++;
     if ($n == 55){echo "Fertig"; break; }
-}
+
+    $n ++;
+}while(true);
 ?>
 </body>
 </html>
