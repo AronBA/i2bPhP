@@ -3,7 +3,7 @@
     <title>Website</title>
 </head>
 <body>
-<form action="Übung%204%20Ergebniss.php" method="post">
+<form action="Übung 4 Ergebniss.php" method="post">
     <p>Wähle deine Haarfarbe</p>
     <select name="haarfarbe">
         <option value="Rot">Rot</option>

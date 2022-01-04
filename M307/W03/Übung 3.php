@@ -15,7 +15,7 @@
     <br>
     <label for="Comment">Comment:</label>
     <br>
-    <textarea id="Comment" name="Comment" required rows="4" cols="30" minlength="10">
+    <textarea id="Comment" name="Comment"  rows="4" cols="30" minlength="10" required>
     </textarea>
     <br>
     <input type = "submit" >
