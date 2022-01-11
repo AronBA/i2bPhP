@@ -8,7 +8,7 @@ CHAR(60)
 
 
 ##Auftrag 4
-Nicht viel, mann kann auf den hash alorythmus zurückschliesen mehr aber nicht
+Nicht viel, mann kann auf den hash alorythmus zurückschliesen, den salt, den gehashten code und die kosten
 
 ##Autrag 5
 

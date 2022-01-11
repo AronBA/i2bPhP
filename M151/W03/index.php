@@ -70,7 +70,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
   // passwort vorhanden, mindestens 8 Zeichen
   if(isset($_POST['password']) && !empty(trim($_POST['password']))){
     $password = trim($_POST['password']);
-    $password = password_hash($password, PASSWORD_DEFAULT);
+    $password = password_hash($password, PASSWORD_ARGON2I);
 
     //entspricht das passwort unseren vorgaben? (minimal 8 Zeichen, Zahlen, Buchstaben, keine Zeilenumbrüche, mindestens ein Gross- und ein Kleinbuchstabe)
     if(!preg_match("/(?=^.{8,}$)((?=.*\d+)(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/", $password)){
