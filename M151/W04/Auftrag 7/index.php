@@ -1,5 +1,12 @@
 <?php
 session_start();
+if(isset($_SESSION['login']) && $_SESSION["admin"]){
+    header("location: admin.php");
+
+} else if (isset($_SESSION['login'])){
+    header("location: user.php");
+}
+
 //Datenbankverbindung
 $host = 'localhost';
 $database = 'm151';
@@ -19,12 +26,7 @@ $message = '';
 
 
 // Formular wurde gesendet und Besucher ist noch nicht angemeldet.
-if(isset($_SESSION['login']) && $_SESSION["admin"]){
-    header("location: admin.php");
 
-} else if (isset($_SESSION['login'])){
-    header("location: user.php");
-}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($error)){
     // username
